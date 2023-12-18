@@ -1,0 +1,171 @@
+:root {
+--blue: #2C40B0ff;
+--amethyst: #9C67D9ff;
+--deep-pink: #FE0099ff;
+--periwinkle: #C1B2F0ff;
+--mauve: #CFB5F1ff;
+}
+
+header {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    background-color: white;
+}
+
+#header-div {
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: .5rem 0 .5rem 0;
+}
+
+header div {
+    flex: 1 1 1;
+}
+
+#header-name {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    width: 33vw;
+    line-height: .8;
+    text-align: right;
+    font-style: italic;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: .5rem .5rem .5rem 0;
+    margin: 0;
+    /* colouring temporary. Replace after frame is built */
+    color: white;
+    background-color: var(--periwinkle);
+}
+
+#header-logo {
+    height: 5rem;
+    border-radius: 50rem;
+    margin-bottom: .5rem;
+}
+
+#logo-div {
+    height: 5rem;
+    width: 33vw;
+    text-align: center;
+    background-color: white;
+}
+
+div ul {
+    width: 33vw;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 1rem;
+    list-style: none;
+    font-size: 1.5rem
+}
+
+.navbar a {
+    padding-left: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    /* change color */
+    color: var(--periwinkle);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 20%;
+}
+
+main .card {
+    margin-bottom: 2.5rem;
+}
+
+#about-me-div {
+    height: 35vh;
+    padding-top: 70px;
+    display: flex;
+    align-items: center;
+}
+
+#about-me-title {
+    display: flex;
+    align-items: center;
+    text-align: end;
+    padding-right: 1rem;
+    height: 100%;
+    /* Make sure to re-colour */
+    border-right: solid var(--deep-pink) 5px;
+}
+
+h2 {
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    line-height: 4.5rem;
+    font-size: 6rem;
+    margin-top: 0;
+    color: var(--deep-pink);
+}
+
+#about-text {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left: .5rem;
+    margin-top: 0;
+}
+
+#portfolio-div {
+    height: 50vh;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+#portfolio-title-div {
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    height: 100%;
+    /* Make sure to re-colour */
+    border-left: solid var(--deep-pink) 5px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--amethyst);
+}
+
+footer div {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    width: 50vw;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+h3{
+    text-transform: uppercase;
+    font-size: 1.4rem;
+}
+
+footer ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 1.2rem;
+}
+
+footer a {
+    color: var(--amethyst);
+}
