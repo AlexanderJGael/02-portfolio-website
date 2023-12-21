@@ -8,6 +8,10 @@
     <title>Developer Portfolio</title>
 </head>
 <body>
+<!-- Background Image Manipulation -->
+    <div class="background">
+
+    <!-- Webpage Banner -->
     <header>
 
     <div class="container" id="header-div">
@@ -22,9 +26,9 @@
         <div class="container" id="navbar-div">
              <nav class="navbar">
                 <ul>
-                    <li><a href="#" id="nav-about">About</a></li>
-                    <li><a href="#" id="nav-portfolio">Portfolio</a></li>
-                    <li><a href="#" id="nav-contact">Contact</a></li>
+                    <li><a href="#about-me" id="nav-about">About</a></li>
+                    <li><a href="#portfolio" id="nav-portfolio">Portfolio</a></li>
+                    <li><a href="#contact-me" id="nav-contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -33,39 +37,54 @@
     </header>
 
     <main>
-        <section title="About Me" class="card">
+        <section title="About Me" class="about-me" id="about-me">
             <div class="container" id="about-me-div">
                 <div class="container" id="about-me-title">
                     <h2 id="about-header">About <br/> Me</h2>
                 </div>
                 <div class="container" id="about-me-text">
-                    <p id="about-text">Sticky Lembas remains overreacting middle pretend? Hutch Uruks failed? Fact Worrywort creature washed. Mines hardship leader bags hallway everybody family Théoden's. I can cut across country easily enough.</p>
+                    <span>Sticky Lembas remains overreacting middle pretend? Hutch Uruks failed? Fact Worrywort creature washed. Mines hardship leader bags hallway everybody family Théoden's. I can cut across country easily enough.</span>
                 </div>
             </div>
         </section>
 
-        <section title="Portfolio" class="card">
+        <section title="Portfolio" class="portfolio" id="portfolio">
             <div class="container" id="portfolio-div">
                 <div class="container" id="portfolio-title-div">
                     <h2 id="portfolio-header">My<br/> Projects</h2>
                 </div>
-                <div class="container" id="portfolio-links">
+
+                <div class="container" id="display-container">
+                    <div class="container" id="featured-project">
+                        <h3>Featured Project</h3>
+                        <a href="https://alexanderjgael.github.io/gael-week-1-challenge/" id="featured-project-img"><span>Accessibility and CSS Cleanup</span></a>
+                    </div>
+                    <nav id="projects-nav">
+                        <a class="projects-img" id="image_1" href="#"><span class="projects-img-text">Project 1</span></a>
+                        <a class="projects-img" id="image_2" href="#"><span class="projects-img-text">Project 2</span></a>
+                        <a class="projects-img" id="image_3" href="#"><span class="projects-img-text">Project 3</span></a>
+                        <a class="projects-img" id="image_4"href="#"><span class="projects-img-text">Project 4</span></a>
+                        <a class="projects-img" id="image_5" href="#"><span class="projects-img-text">Project 5</span></a>
+                    </nav>
                 </div>
             </div>
         </section>
     </main>
-</body>
-<footer>
-    <div>
-        <h3>Contact Me</h3>
-        <nav>
-            <ul>
-                <li><a href="#" id="phone-number">(555) 555-5555</a></li>
-                <li><a href="#" id="github">GitHub</a></li>
-                <li><a href="#" id="instagram">Instagram</a></li>
-                <li><a href="#" id="youtube">YouTube</a></li>
-            </ul>
-        </nav>
+    <section title="Contact Me" id="contact-me">
+        <div>
+            <h4>Contact Me</h4>
+            <nav>
+                <ul>
+                    <li><a href="tel: (910)813-1800" id="phone-number">(555) 555-5555</a></li>
+                    <li><a href="https://github.com/AlexanderJGael" id="github">GitHub</a></li>
+                    <li><a href="https://www.instagram.com/alexanderjohnmusic" id="instagram">Instagram</a></li>
+                    <li><a href="https://www.youtube.com/channel/UC_mMb4DMuWeM-NqyRgSyW7Q" id="youtube">YouTube</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
     </div>
-</footer>
+</body>
+
+<footer></footer>
 </html>

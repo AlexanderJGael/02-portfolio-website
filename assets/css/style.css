@@ -4,16 +4,31 @@
 --deep-pink: #FE0099ff;
 --periwinkle: #C1B2F0ff;
 --mauve: #CFB5F1ff;
+--background-blend: rgba(255, 255, 255, 0.619)
 }
 
+/* Set background image */
+Body {
+    background-attachment: fixed;
+    background-attachment: fixed;
+    background-image: url("../images/pink-sky.jpeg");
+    background-size: cover;
+}
+
+/* Apply low opacity color over background for visibility */
+.background {
+    background-color: var(--background-blend);
+}
+
+/* Adjusts entire header object */
 header {
     position: fixed;
     right: 0;
     left: 0;
     z-index: 999;
-    background-color: white;
 }
 
+/* adjust the div containing header elements */
 #header-div {
     height: 5rem;
     display: flex;
@@ -22,16 +37,18 @@ header {
     margin: .5rem 0 .5rem 0;
 }
 
+/* sets flex for all containers in header section */
 header div {
     flex: 1 1 1;
 }
 
+/* "ALEX GAEL" header block */
 #header-name {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     height: 100%;
-    width: 33vw;
+    width: 22.5vw;
     line-height: .8;
     text-align: right;
     font-style: italic;
@@ -44,6 +61,7 @@ header div {
     background-color: var(--periwinkle);
 }
 
+/* Header Logo Settings */
 #header-logo {
     height: 5rem;
     border-radius: 50rem;
@@ -52,17 +70,17 @@ header div {
 
 #logo-div {
     height: 5rem;
-    width: 33vw;
+    width: auto;
     text-align: center;
-    background-color: white;
 }
 
+/* Banner Nav */
 div ul {
-    width: 33vw;
+    width: 22.5vw;
     display: flex;
     justify-content: flex-end;
-    padding-right: 1rem;
-    list-style: none;
+    align-items: center;
+    padding-right: 1.5rem;
     font-size: 1.5rem
 }
 
@@ -72,78 +90,206 @@ div ul {
     text-transform: uppercase;
     font-weight: bold;
     /* change color */
-    color: var(--periwinkle);
+    color: var(--amethyst);
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* MAIN SECTION */
 main {
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0 20%;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 main .card {
     margin-bottom: 2.5rem;
 }
 
-#about-me-div {
-    height: 35vh;
-    padding-top: 70px;
-    display: flex;
-    align-items: center;
-}
-
-#about-me-title {
-    display: flex;
-    align-items: center;
-    text-align: end;
-    padding-right: 1rem;
-    height: 100%;
-    /* Make sure to re-colour */
-    border-right: solid var(--deep-pink) 5px;
-}
-
+/* Edits ALL h2 objects within BODY */
 h2 {
     font-weight: bold;
     font-style: italic;
     text-transform: uppercase;
-    line-height: 4.5rem;
-    font-size: 6rem;
-    margin-top: 0;
+    font-size: 7rem;
+    line-height: 5.3rem;
+    margin: 0px 1rem 0px 0px;
+    padding: 0px;
     color: var(--deep-pink);
 }
 
-#about-text {
+/* ABOUT ME SECTION */
+#about-me-div {
+    height: 35vh;
+    width: 75vw;
+    margin-top: 7rem;
     display: flex;
     align-items: center;
+    padding: 0px;
+}
+
+/* About Me Header Settings */
+#about-me-title {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    text-align: end;
+    padding-right: 1rem;
     height: 100%;
-    padding-left: .5rem;
+    width: 25%;
+    /* Make sure to re-colour */
+    border-right: solid var(--deep-pink) 5px;
+}
+
+/* ABout Me Paragraph Settings */
+#about-me-text span {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-left: 1rem;
     margin-top: 0;
 }
 
+/* PORTFOLIO SECTION */
 #portfolio-div {
+    margin: 1.5rem 0px;
     height: 50vh;
+    width: 75vw;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
 }
 
+/* Adjust Portfolio Header */
 #portfolio-title-div {
     display: flex;
+    justify-content: start;
     align-items: center;
-    padding-left: 1rem;
+    text-align: start;
     height: 100%;
+    width: 25%;
     /* Make sure to re-colour */
     border-left: solid var(--deep-pink) 5px;
+    padding: 0px;
 }
 
-footer {
+#portfolio-header {
+    padding: 0px 0px 0px 1rem;
+}
+
+/* Div for entire protfolio display */
+#display-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: calc(75vw * .75);
+    height: 50vh;
+}
+
+/* Edit Large Card */
+#featured-project {
+    margin: 0px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 70%;
+}
+
+h3 {
+    margin: 0px;
+    padding: 0px;
+    text-transform: uppercase;
+    color: var(--deep-pink);
+}
+
+#featured-project-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-image: url(../images/pink-sky.jpeg);
+    background-size: cover;
+    border: solid 3px var(--blue);
+    border-radius: 2rem;
+}
+
+#featured-project-img span, .projects-img-text {
+    font-size: 3rem;
+    color: white;
+    padding: 1rem;
+    font-weight: 900;
+}
+
+/* PROJECTS Nav */
+#projects-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: calc(50vh * .3);
+    width: calc(75vw * .75)
+}
+
+.projects-img {
+    border: solid 3px var(--blue);
+    border-radius: 2rem;
+    height: 80%;
+    width: 20%;
+    margin: 0px 1rem;
+    background-size: cover;
+}
+
+.projects-img-text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    text-align: center;
+    background-color: var(--background-blend);
+    font-size: 2rem;
+}
+
+
+/* NAV Backgrounds */
+#image_1 {
+    background: url(../images/pink-sky.jpeg);
+    background-size: cover;
+}
+#image_2 {
+    background: url(../images/pink-smear.jpeg);
+    background-size: cover;
+}
+#image_3 {
+    background: url(../images/pink-roses.jpeg);
+    background-size: cover;
+}
+#image_4 {
+    background: url(../images/pink-marble.jpeg);
+    background-size: cover;
+}
+#image_5 {
+    background: url(../images/p-ink.jpeg);
+    background-size: cover;
+}
+
+/* ContactSECTION */
+#contact-me {
+    margin-top: 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     color: var(--amethyst);
 }
 
-footer div {
+#contact-me div {
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -153,19 +299,20 @@ footer div {
     text-align: center;
 }
 
-h3{
+h4{
     text-transform: uppercase;
-    font-size: 1.4rem;
+    font-size: 3rem;
 }
 
-footer ul {
+/* Contact Me items */
+#contact-me ul {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    font-size: 1.2rem;
+    font-size: 2rem;
 }
 
-footer a {
+#contact-me a {
     color: var(--amethyst);
 }
