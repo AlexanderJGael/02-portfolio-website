@@ -7,17 +7,6 @@
 --background-blend: rgba(255, 255, 255, 0.619)
 }
 
-/* Small devices (tablets, 768px and up) */
-
-
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) { ... }
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-    #banner { display: block; } /* banner displayed only for desktops */
-}
-
 /* Set background image */
 Body {
     background-attachment: fixed;
