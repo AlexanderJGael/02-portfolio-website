@@ -1,4 +1,8 @@
 /* Code source: https://dev.to/dan503/comment/4oo0 */
+* {
+  scroll-behavior: smooth;
+}
+
 html {
     /* 1rem = 10px */
     font-size: 62.5%;
