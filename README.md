@@ -1,6 +1,7 @@
 
 # Developer Portfolio
 
+[Visit the site](https://alexanderjgael.github.io/02-portfolio-website/)
 ![Website Preview](./assets/images/Developer%20Portfolio.jpeg)
 
 ## Overview
