@@ -7,6 +7,17 @@
 --background-blend: rgba(255, 255, 255, 0.619)
 }
 
+/* Small devices (tablets, 768px and up) */
+
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { ... }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    #banner { display: block; } /* banner displayed only for desktops */
+}
+
 /* Set background image */
 Body {
     background-attachment: fixed;
@@ -26,6 +37,8 @@ header {
     right: 0;
     left: 0;
     z-index: 999;
+    background-color: rgba(255, 255, 255, 0.099);
+    backdrop-filter: blur(3px);
 }
 
 /* adjust the div containing header elements */
@@ -75,7 +88,7 @@ header div {
 }
 
 /* Banner Nav */
-div ul {
+.navbar ul {
     width: 22.5vw;
     display: flex;
     justify-content: flex-end;
@@ -92,6 +105,10 @@ div ul {
     /* change color */
     color: var(--amethyst);
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.hamburger {
+    display: none;
 }
 
 /* MAIN SECTION */
@@ -147,6 +164,7 @@ h2 {
 #about-me-text span {
     display: flex;
     align-items: center;
+    text-align: justify;
     width: 100%;
     padding-left: 1rem;
     margin-top: 0;
@@ -238,7 +256,6 @@ h3 {
 }
 
 .projects-img {
-
     border-radius: 2rem;
     height: 80%;
     width: 20%;
@@ -310,6 +327,8 @@ h3 {
 h4{
     text-transform: uppercase;
     font-size: 3rem;
+    text-align: center;
+    width: 100%;
 }
 
 /* Contact Me items */
@@ -323,4 +342,139 @@ h4{
 
 #contact-me a {
     color: var(--amethyst);
+}
+
+@media (max-width: 1199px) {
+    #about-me-div {
+        margin-top: 9rem;
+        height: auto;
+        width: 75vw;
+        display: block;
+    }
+
+    #about-me-title {
+        height: auto;
+        width: auto;
+        border-right: 0px;
+        border-bottom: solid 5px var(--deep-pink);
+    }
+
+    #about-me-text {
+        padding: 1rem 1rem;
+    }  
+    
+    #portfolio-div {
+        margin-top: 5rem;
+        height: auto;
+        width: 75vw;
+        display: block;
+    }
+
+    #portfolio-title-div {
+        height: auto;
+        width: auto;
+        border-left: 0px;
+        border-bottom: solid 5px var(--deep-pink);
+    }
+
+    #display-container {
+        width: 100%;
+        margin-top: .5rem;
+    }
+
+    #featured-project {
+        width: 95%;
+    }
+
+    #projects-nav {
+        width: 95%;
+        padding: 0px;
+    }
+
+    .projects-img {
+        width: 19%;
+        margin: 0px;
+    }
+
+    #contact-me div {
+        width: 75vw;
+    }
+
+    #contact-me ul {
+        padding: 0px;
+        margin: 0px 0px 4rem 0px;
+    }
+ }
+
+
+
+@media (max-width: 797px) {
+    #about-me-div {
+        width: 95vw;
+    }
+
+    #portfolio-div {
+        width: 95vw;
+    }
+
+    #contact-me div {
+        width: 95vw;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    #hamburger-ul {
+        text-align: center;
+        width: 100vw;
+        font-size: 3rem;
+        position: absolute;
+        left: 0px;
+        top: 30px;
+        background-color: white;
+        border: 3px solid var(--deep-pink);
+    }
+
+    .hamburger ul a {
+        text-align: right;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: var(--amethyst);
+        padding-top: 10px;
+    }
+
+    .hamburger {
+        width: 22.5vw;
+        display: flex;
+        flex-direction: row-reverse;
+        margin-right: 1rem;
+    }
+
+    #menu-img {
+        height: 50px;
+        width: 50px;
+    }
+
+    .hidden {
+        visibility: hidden;
+    }
+
+    #hamburger-anchor:focus + .hidden {
+        visibility: visible;
+    }
+
+    #hamburger-anchor:focus + .hidden a {
+        visibility: visible;
+    }
+
+    .hidden:hover {
+        visibility: visible;
+    }
+
+    .hidden a:focus + .hidden {
+        visibility: hidden;
+    }
+    
 }
